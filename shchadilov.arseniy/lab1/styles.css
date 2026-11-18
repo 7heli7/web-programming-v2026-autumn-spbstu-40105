@@ -15,6 +15,9 @@ h1 {
 }
 
 .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: 400px;
   margin: 0 auto;
   padding: 0;
@@ -25,15 +28,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 0;
+  padding-bottom: 16px;
   border-bottom: 1px solid #000;
-}
-
-.menu-item:first-child {
-  padding-top: 0;
-}
-
-.menu-item:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
 }
