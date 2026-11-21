@@ -84,6 +84,7 @@ function createOwnerElement(car, ownerName) {
 function createCarCard(car) {
   const card = document.createElement('article');
   card.className = 'car-card';
+  card.setAttribute('data-testid', 'entity-card');
 
   const header = document.createElement('div');
   header.className = 'car-header';
@@ -101,6 +102,7 @@ function createCarCard(car) {
   const deleteButton = document.createElement('button');
   deleteButton.type = 'button';
   deleteButton.className = 'btn-danger';
+  deleteButton.setAttribute('data-testid', 'delete-entity');
   deleteButton.textContent = 'Удалить автомобиль';
 
   deleteButton.addEventListener('click', async () => {
